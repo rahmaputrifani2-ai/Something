@@ -854,11 +854,11 @@
     </div>
   </div>
 
-  <!-- Music Bar (Shape of My Heart, auto-loop 00:00 - 00:22) -->
+  <!-- Music Bar (Shape of My Heart, auto-loop 00:00 - 00:58) -->
   <div class="music-bar">
     <div class="music-info">
       <div class="music-title">Shape of My Heart</div>
-      <div class="music-sub" id="music-status">Otomatis ulang di 00:22 (tanpa suara akhir)</div>
+      <div class="music-sub" id="music-status">Otomatis ulang di 00:58 (tanpa suara akhir)</div>
     </div>
     <div class="music-controls">
       <button class="music-btn" id="music-toggle-btn">Play</button>
@@ -867,7 +867,7 @@
     </div>
   </div>
 
-  <audio id="bg-media" src="376cbf71a76e199ffdf384e06b953a7e.mp4" preload="auto"></audio>
+  <audio id="bg-media" src="7a3d47ca81ce710f31fbe3eb866a7666.mp4" preload="auto"></audio>
 
   <script>
     // 9 Foto dari chat (urut sesuai tampilan galeri)
@@ -1055,7 +1055,7 @@
 
     renderQuiz();
 
-    // Audio / Video Player: loop 00:00 - 00:22 agar suara penutup TikTok terpotong
+    // Audio / Video Player: loop 00:00 - 00:58 agar suara penutup TikTok terpotong
     const audioEl = document.getElementById("bg-media");
     const toggleBtn = document.getElementById("music-toggle-btn");
     const musicStatus = document.getElementById("music-status");
@@ -1073,12 +1073,12 @@
 
     audioEl.addEventListener("play", () => {
       toggleBtn.textContent = "Pause";
-      musicStatus.textContent = "Sedang diputar • Ulang otomatis di 00:22";
+      musicStatus.textContent = "Sedang diputar • Ulang otomatis di 00:58";
     });
 
     audioEl.addEventListener("pause", () => {
       toggleBtn.textContent = "Play";
-      musicStatus.textContent = "Dijeda • Ulang otomatis di 00:22";
+      musicStatus.textContent = "Dijeda • Ulang otomatis di 00:58";
     });
 
     audioEl.addEventListener("error", () => {
